@@ -18,7 +18,7 @@ variable "gcp_project_id" {
 
 provider "google-beta" {
   credentials = var.gcp_credentials
-  project     = project = var.gcp_project_id
+  project     = var.gcp_project_id
   #region      = "us-central1"
   #zone        = "us-central1-c"
 }
