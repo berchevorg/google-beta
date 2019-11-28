@@ -11,12 +11,10 @@ terraform {
 
 variable "gcp_credentials" {}
 
-variable "gcp_project_id" {
-  #default = "sup-eng-eu"
-}
+variable "gcp_project_id" {}
 
 
-provider "google-beta" {
+provider "google" {
   credentials = var.gcp_credentials
   project     = var.gcp_project_id
   #region      = "us-central1"
