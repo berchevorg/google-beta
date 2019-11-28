@@ -14,7 +14,7 @@ variable "gcp_credentials" {}
 variable "gcp_project_id" {}
 
 
-provider "google" {
+provider "google-beta" {
   credentials = var.gcp_credentials
   project     = var.gcp_project_id
   #region      = "us-central1"
